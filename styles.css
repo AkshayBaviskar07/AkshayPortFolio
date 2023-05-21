@@ -1,0 +1,180 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu:wght@300&display=swap');
+
+  * {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header-name:hover{
+    color: gold;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1c2439;
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: gold;
+    font-weight: bold;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    align-items: center;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 3rem;
+}
+
+.rightSection img {
+    width: 100%;
+}
+
+.dev-name {
+    color: gold;
+}
+
+#element {
+    color: gold;
+}
+
+hr {
+    border: 0;
+    background: rgb(229, 211, 112);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.dev-skills{
+    max-width: 80vw;
+    margin: auto;
+    height: 8vh;
+}
+
+.dev-skills .heading-skills{
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 3px 0;
+}
+
+.dev-skills #lang-skills{
+    text-align: center;
+    margin: 5px 0;
+    color: #94a3b8;
+    font-size: 25px;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 60vh;
+}
+
+.secondSection h1 {
+    font-size: 2rem;
+}
+
+.text-grey {
+    color: #64748b;
+}
+
+.secondSection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+}
+
+.secondSection .project-section{
+    margin: 30px 0; 
+}
+
+.secondSection .project-section .heading-project{
+    font-size: 1.7rem;
+    margin: 5px 0;
+}
+
+.secondSection .project-section .info-project{
+    color: #64748b;
+    margin: 5px 0px;
+}
+
+.secondSection .project-section .btn-project{
+    background-color: gold;
+    color: #0f172a;
+    padding: 5px;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+
+.secondSection .project-section .btn-project:hover{
+    background-color:  #0f172a;
+    color: gold;
+    transition: 0.5s;
+}
+
+footer{
+    background-color: #18213a;
+    height: 150px;
+}
+
+.footer-name{
+    padding-top: 30px;
+    padding-left: 60px;
+    font-size: 1.2rem;
+}
+
+.footer-container{
+   display: flex;
+   justify-content: center;
+}
+
+.footer-container a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.footer-container a:hover{
+    color: gold;
+    transition: 0.5s;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,79 +8,18 @@
     <title>PortFolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-        body{
-            background-color: #0f172a;
-            color: white;
-            font-family: 'Ubuntu', sans-serif;
-        }
-
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color:  #1c2439;
-            height: 80px;
-        }
-
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li{
-            list-style: none;
-            margin: 0px 23px;
-        }
-        
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover{
-            color: gold;
-            font-weight: bold;
-        }
-
-        .left{
-            font-size: 2rem;
-        }
-
-        .firstSection{
-            display: flex;
-            justify-content: space-around;
-            margin: 80px 0;
-            align-items: center;
-        }
-
-        .firstSection > div{
-            width: 30%;
-        }
-
-        .leftSection{
-            font-size: 3rem;
-        }
-
-        .rightSection img{            
-            width: 100%; 
-        }
-
-        .dev-name{
-            color: gold;
-        }
-    </style>
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="left">Akshay-PortFolio</div>
+            <div class="left">
+                <h1><span class="header-name">A</span><span class="header-name">k</span><span class="header-name">s</span><span class="header-name">h</span><span class="header-name">a</span><span class="header-name">y</span><span class="header-name">-</span><span class="header-name">P</span><span class="header-name">o</span><span class="header-name">r</span><span class="header-name">t</span><span class="header-name">F</span><span class="header-name">l</span><span class="header-name">i</span><span class="header-name">o</span></h1>
+            </div>
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -94,15 +34,68 @@
         <section>
             <div class="firstSection">
                 <div class="leftSection">
-                   Hi! My name is <span class="dev-name">Akshay Baviskar</span>
-                   <div>I am a Web Developer.</div>
+                    Hi! My name is <span class="dev-name">Akshay Baviskar</span>
+                    <div>I am a Web Devloper skilled in <span id="element"></span>
+                    </div>
                 </div>
                 <div class="rightSection">
                     <img src="img/developer.png" alt="image">
                 </div>
             </div>
-            
+        </section>
+<hr>
+        <aside class="dev-skills">
+            <p class="heading-skills">Skills</p>
+            <p id="lang-skills"> Java,Jdbc,Servlet,Sql,Html,Css</p>
+        </aside>
+<hr>
+        <section>
+            <div class="secondSection">
+                <h1>Projects</h1>
+                <span class="text-grey">what i have done so far.</span>
+                <div class="project-section">
+                    <p class="heading-project">Online Reservation System</p>
+                        <p class="info-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores fugit, commodi vero
+                            accusantium molestiae dolore. Tempore, asperiores inventore. Magnam libero delectus facilis
+                            fugit. Porro quisquam mollitia numquam vero quia?</p>
+                    <span class="btn-project">source code</span>
+                </div>
+
+                 <div class="project-section">
+                    <p class="heading-project">Online Reservation System</p>
+                        <p class="info-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores fugit, commodi vero
+                            accusantium molestiae dolore. Tempore, asperiores inventore. Magnam libero delectus facilis
+                            fugit. Porro quisquam mollitia numquam vero quia?</p>
+                    <span class="btn-project">source code</span>
+                </div>
+                <div class="project-section">
+                    <p class="heading-project">Online Reservation System</p>
+                        <p class="info-project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores fugit, commodi vero
+                            accusantium molestiae dolore. Tempore, asperiores inventore. Magnam libero delectus facilis
+                            fugit. Porro quisquam mollitia numquam vero quia?</p>
+                    <span class="btn-project">source code</span>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-name">
+            <h1>Akshay-PortFolio</h1>
+        </div>
+        <div class="footer-container">
+           <a href="/">LinkedIn</a>
+           <a href="/">GitHub</a>
+           <a href="/">Instagram</a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Java','Html','Css','MySql'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>
